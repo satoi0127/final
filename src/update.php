@@ -27,10 +27,12 @@
             echo'<td>',$row['maker_name'],'</td>';
             echo'<td>',$row['category_name'],'</td>';
             echo'<td><img src="img/'.$row['path'].'" width="60px" height="60px"></td>';
-            echo'<form action="update2.php" method="post">';
+            echo'<td>';
+            echo'<form action="update2.php" method="POST">';
             echo '<input type="hidden" name="id" value="',$row['id'],'">';
             echo '<button type="submit">更新</button>';
             echo '</form>';
+            echo'</td>';
             echo'</tr>';
         }
         ?>

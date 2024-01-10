@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<?php
+    const SERVER = 'mysql220.phy.lolipop.lan';
+    const DBNAME = 'LAA1517439-final';
+    const USER = 'LAA1517439';
+    const PASS = 'Pass0127';
+    $connect = 'mysql:host='. SERVER . ';dbname='. DBNAME . ';charset=utf8';
+    $pdo=new PDO($connect, USER, PASS);
+    ?>
 <div class="main">
         <form action="insert2.php" method="POST">
         <h2>追加</h2>
@@ -13,10 +21,22 @@
         <input type="text" size="30" class="text_box" name="name" required>
         </td></tr>
         <tr><td class="td1">メーカID</td><td class="td2">
-        <input type="text" size="30" class="text_box" name="maker" required>
+        <?php
+        echo'<select name="maker" id="maker">';
+        foreach($pdo->query('select * from Maker') as $row){
+        echo'<option value="',$row['maker_id'],'">',$row['maker_name'],'</option>';
+        }
+        echo'</select>';
+       ?>
         </td></tr>
         <tr><td class="td1">カテゴリID</td><td class="td2">
-        <input type="text" size="30" class="text_box" name="category" required>
+        <?php
+        echo'<select name="category" id="category">';
+        foreach($pdo->query('select * from Category') as $row){
+        echo'<option value="',$row['category_id'],'">',$row['category_name'],'</option>';
+        }
+        echo'</select>';
+        ?>
         </td ></tr>
         <tr><td class="td1">画像</td><td class="td2">
         <input type="file" class="text_box" name="path" value="" required>
