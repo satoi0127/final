@@ -24,6 +24,6 @@
             echo'</tr>';
         echo'</table>';    
 ?>
-
+<button onclick="location.href='all.php'">一覧</button>
 </body>
 </html>

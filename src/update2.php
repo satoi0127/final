@@ -33,6 +33,7 @@
         echo'<button class="sarch" type="submit">更新</button>';
         echo'</form>';
     ?>
+    <button onclick="location.href='update.php'">戻る</button>
     </div>
 </body>
 </html>

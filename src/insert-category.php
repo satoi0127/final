@@ -14,7 +14,8 @@
         </td></tr>
         </table>
         <button type="submit" class="insert">追加</button>
-    </div>
 </form>
+<button onclick="location.href='insert.php'">戻る</button>
+    </div>
 </body>
 </html>

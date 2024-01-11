@@ -16,6 +16,7 @@
         $sql->execute([$_POST['name'],$_POST['maker'],$_POST['category'],$_POST['path']]);
         echo'<h2>追加が完了しました</h2>';
 ?>
+<button onclick="location.href='all.php'">一覧</button>
     
 
 </body>

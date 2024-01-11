@@ -17,5 +17,6 @@
         $sql->execute([$_POST['id']]);
         echo'<h2>削除が完了しました</h2>';
 ?>
+<button onclick="location.href='all.php'">一覧</button>
 </body>
 </html>
