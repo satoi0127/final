@@ -15,18 +15,13 @@
     $sql=$pdo->prepare('insert into Category(category_name) values (?)');
         $sql->execute([$_POST['category_name']]);
         echo'<h2>追加が完了しました</h2>';
-        $sql=$pdo->prepare('select * Category where and category_name=?');
-        $sql->execute([$_POST['category_name']]);
         echo'<table border="1" cellpadding="10"cellspacing="0">';
         echo'<tr>
-                <th>カテゴリID</th><th>カテゴリ名</th>
+                <th>カテゴリ名</th>
             </tr>';
-        foreach($sql as $row){
             echo'<tr>';
-            echo'<td>',$row['id'],'</td>';
-            echo'<td>',$row['category_name'],'</td>';
+            echo'<td>',$_POST['category_name'],'</td>';
             echo'</tr>';
-        }
         echo'</table>';    
 ?>
 

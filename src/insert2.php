@@ -15,7 +15,19 @@
     $sql=$pdo->prepare('insert into Camera(name, maker_id, category_id, path) values (?,?,?,?)');
         $sql->execute([$_POST['name'],$_POST['maker'],$_POST['category'],$_POST['path']]);
         echo'<h2>追加が完了しました</h2>';
-        
+        $sql=$pdo->prepare('select * from Camera,Maker,Category where Camera.maker_id=Maker.maker_id and Camera.category_id=Category.category_id and name=?');
+        $sql->execute([$_POST['name']]);
+        echo'<table border="1" cellpadding="10"cellspacing="0">';
+        foreach($sql as $row){
+            echo'<tr>';
+            echo'<td>',$row['id'],'</td>';
+            echo'<td>',$row['name'],'</td>';
+            echo'<td>',$row['maker_name'],'</td>';
+            echo'<td>',$row['category_name'],'</td>';
+            echo'<td><img src="img/'.$row['path'].'" width="60px" height="60px"></td>';
+            echo'</tr>';
+        }
+        echo'</table>';
 ?>
     
 
