@@ -13,7 +13,7 @@
     const PASS = 'Pass0127';
     $connect = 'mysql:host='. SERVER . ';dbname='. DBNAME . ';charset=utf8';
 ?>
-<h1>カメラ一覧</h1>
+<h1>更新</h1>
 <table border="1">
             <tr>
                 <th>ID</th><th>名前</th><th>メーカー名</th><th>カテゴリ</th><th>画像</th><th></th>
