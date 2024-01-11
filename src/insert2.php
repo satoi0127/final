@@ -14,7 +14,10 @@
     $pdo=new PDO($connect, USER, PASS);
     $sql=$pdo->prepare('insert into Camera(name, maker_id, category_id, path) values (?,?,?,?)');
         $sql->execute([$_POST['name'],$_POST['maker'],$_POST['category'],$_POST['path']]);
+        echo'<h2>追加が完了しました</h2>';
+        
 ?>
     
+
 </body>
 </html>

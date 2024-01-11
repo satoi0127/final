@@ -43,6 +43,8 @@
         </td></tr>
         </table>
         <button type="submit" class="insert">追加</button>
+        <button onclick="location.href='insert-category.php'">カテゴリ登録</button>
+
     </form>
         
     

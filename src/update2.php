@@ -33,5 +33,6 @@
         echo'<button class="sarch" type="submit">更新</button>';
         echo'</form>';
     ?>
+    </div>
 </body>
 </html>
