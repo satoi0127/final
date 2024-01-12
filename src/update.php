@@ -36,7 +36,8 @@
             echo'</tr>';
         }
         ?>
-        <button onclick="location.href='index.php'">戻る</button>
+        
         </table>
+        <button onclick="location.href='index.php'">戻る</button>
 </body>
 </html>

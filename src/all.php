@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
 <?php
@@ -13,6 +13,7 @@
     const PASS = 'Pass0127';
     $connect = 'mysql:host='. SERVER . ';dbname='. DBNAME . ';charset=utf8';
 ?>
+<div class="main">
 <h1>カメラ一覧</h1>
 <table border="1" cellpadding="10"cellspacing="0">
             <tr>
@@ -33,5 +34,6 @@
         
         </table>
         <button onclick="location.href='index.php'">戻る</button>
+    </div>
 </body>
 </html>
