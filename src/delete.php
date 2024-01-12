@@ -28,7 +28,7 @@
             echo'<td>',$row['name'],'</td>';
             echo'<td>',$row['maker_name'],'</td>';
             echo'<td>',$row['category_name'],'</td>';
-            echo'<td><img src="img/'.$row['path'].'" width="80px" height="80px"></td>';
+            echo'<td><img src="img/'.$row['path'].'" width="120px" height="120px"></td>';
             echo'<td>';
             echo'<form action="delete2.php" method="POST">';
             echo '<input type="hidden" name="id" value="',$row['id'],'">';

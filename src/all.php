@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/All.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.css">
+    
 </head>
 <body>
 <?php
@@ -27,7 +28,7 @@
             echo'<td>',$row['name'],'</td>';
             echo'<td>',$row['maker_name'],'</td>';
             echo'<td>',$row['category_name'],'</td>';
-            echo'<td><img src="img/'.$row['path'].'" width="60px" height="60px"></td>';
+            echo'<td><img src="img/'.$row['path'].'" width="120px" height="120px"></td>';
             echo'</tr>';
         }
         ?>

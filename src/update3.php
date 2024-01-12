@@ -27,7 +27,7 @@
         echo'<td>',$row['name'],'</td>';
         echo'<td>',$row['maker_name'],'</td>';
         echo'<td>',$row['category_name'],'</td>';
-        echo'<td><img src="img/'.$row['path'].'" width="80px" height="80px"></td>';
+        echo'<td><img src="img/'.$row['path'].'" width="120px" height="120px"></td>';
         echo'</tr>';
     }
     echo'</table>';
