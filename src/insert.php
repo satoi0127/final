@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/insert.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -44,9 +45,8 @@
         </table>
         <button type="submit" class="insert">追加</button>
         </form>
-        <button onclick="location.href='insert-category.php'">カテゴリ登録</button>
+        <button onclick="location.href='insert-category.php'" class="insert_c">カテゴリ登録</button>
         <button onclick="location.href='index.php'">戻る</button>
-        
     
 </div>
 </body>

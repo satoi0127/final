@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/update2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -14,8 +15,9 @@
     $pdo=new PDO($connect, USER, PASS);
     $sql=$pdo->prepare('select * from Camera where id=?');
     $sql->execute([$_POST['id']]);
-    foreach($sql as $row){
     echo'<div class="main">';
+    echo'<h1>更新</h1>';
+    foreach($sql as $row){
         echo'<table class="table" border="1" cellpadding="10"cellspacing="0">';
         echo'<form action="update3.php" method="post">';
         echo '<input type="hidden" name="id" value="',$row['id'],'">';
@@ -23,14 +25,21 @@
         echo'<input type="text" size="30" class="text_box" name="name"value="',$row['name'],'">';
         echo'</td></tr>';
         echo'<tr><td class="td1">メーカID</td><td class="td2">';
-        echo'<input type="number" size="30" class="text_box" name="maker" value="',$row['maker_id'],'">';
+        echo'<select name="maker" id="maker">';
+        foreach($pdo->query('select * from Maker') as $row){
+        echo'<option value="',$row['maker_id'],'">',$row['maker_name'],'</option>';
+        }
+        echo'</select>';
         echo'</td></tr>';
         echo'<tr><td class="td1">カテゴリID</td><td class="td2">';
-        echo'<input type="number" size="30" class="text_box" name="category" value="',$row['category_id'],'">';
+        echo'<select name="category" id="category">';
+        foreach($pdo->query('select * from Category') as $row){
+        echo'<option value="',$row['category_id'],'">',$row['category_name'],'</option>';
+        }
         echo'</td ></tr>';
         echo'</table>';
         }
-        echo'<button class="sarch" type="submit">更新</button>';
+        echo'<button class="update" type="submit">更新</button>';
         echo'</form>';
     ?>
     <button onclick="location.href='update.php'">戻る</button>

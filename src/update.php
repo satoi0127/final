@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/update.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/all.css">
+    
 </head>
 <body>
 <?php
@@ -13,6 +14,7 @@
     const PASS = 'Pass0127';
     $connect = 'mysql:host='. SERVER . ';dbname='. DBNAME . ';charset=utf8';
 ?>
+<div class="main">
 <h1>更新</h1>
 <table border="1" cellpadding="10"cellspacing="0">
             <tr>
@@ -26,11 +28,11 @@
             echo'<td>',$row['name'],'</td>';
             echo'<td>',$row['maker_name'],'</td>';
             echo'<td>',$row['category_name'],'</td>';
-            echo'<td><img src="img/'.$row['path'].'" width="60px" height="60px"></td>';
+            echo'<td><img src="img/'.$row['path'].'" width="80px" height="80px"></td>';
             echo'<td>';
             echo'<form action="update2.php" method="POST">';
             echo '<input type="hidden" name="id" value="',$row['id'],'">';
-            echo '<button type="submit">更新</button>';
+            echo '<button type="submit" class="update">更新</button>';
             echo '</form>';
             echo'</td>';
             echo'</tr>';
@@ -39,5 +41,6 @@
         
         </table>
         <button onclick="location.href='index.php'">戻る</button>
+        </div>
 </body>
 </html>

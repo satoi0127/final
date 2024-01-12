@@ -1,3 +1,9 @@
+.main{
+    text-align: center;
+}
+table{
+    margin-left: 400px;
+}
 button{
     margin-top: 15px;
     margin-left: 20px;
@@ -9,29 +15,12 @@ button{
     color: white;
     cursor: pointer;
 }
-.insert{
-    margin-top: 10px;
-    width: 100px;
-    height: 50px;
+.update{
+    width: 60px;
+    height: 30px;
     border-radius:50px;
     background-color:#ef3535;
     border-color:#ef3535 ;
     color: white;
     cursor: pointer;
-}
-.insert_c{
-    margin-top: 15px;
-    width: 100px;
-    height: 50px;
-    border-radius:50px;
-    background-color:#ef3535;
-    border-color:#ef3535 ;
-    color: white;
-    cursor: pointer;
-}
-.main{
-    text-align: center;
-}
-table{
-    margin-left: 550px;
 }
