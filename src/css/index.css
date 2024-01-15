@@ -1,3 +1,7 @@
+body{
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+}
 button{
     width: 150px;
     height: 80px;
@@ -17,4 +21,7 @@ button{
     margin-right: 400px;
     text-align: center;
     
+}
+h1{
+    color: white;
 }

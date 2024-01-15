@@ -15,7 +15,8 @@
     $connect = 'mysql:host='. SERVER . ';dbname='. DBNAME . ';charset=utf8';
 ?>
 <div class="main">
-<h1>削除</h1>
+<br>
+<h1>削除</h1><br>
 <table border="1" cellpadding="10"cellspacing="0">
             <tr>
                 <th>ID</th><th>名前</th><th>メーカー名</th><th>カテゴリ</th><th>画像</th><th></th>

@@ -1,3 +1,7 @@
+body{
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+}
 button{
     margin-top: 15px;
     margin-left: 20px;
@@ -34,7 +38,12 @@ button{
 }
 table{
     margin-left: 550px;
+    background-color:rgba(255, 255, 255, 0.9);
 }
 .title{
     margin-top: 80px;
+    color: white;
+}
+h1{
+    color: white;
 }

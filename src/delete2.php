@@ -16,7 +16,7 @@
     $pdo=new PDO($connect, USER, PASS);
     $sql=$pdo->prepare('delete from Camera where id=?');
         $sql->execute([$_POST['id']]);
-        echo'<h2 class="title">削除が完了しました</h2>';
+        echo'<h1 class="title">削除が完了しました</h1>';
 ?>
 <button onclick="location.href='all.php'">一覧</button>
 </div>

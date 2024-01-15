@@ -1,8 +1,13 @@
+body{
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+}
 .main{
     text-align: center;
 }
 table{
     margin-left: 450px;
+    background-color:rgba(255, 255, 255, 0.9);
 }
 button{
     margin-top: 15px;
@@ -23,4 +28,7 @@ button{
     border-color:#ef3535 ;
     color: white;
     cursor: pointer;
+}
+h1{
+    color: white;
 }

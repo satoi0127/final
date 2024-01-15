@@ -8,7 +8,7 @@
 <body>
 <div class="main">
         <form action="insert2-category.php" method="POST">
-        <h2>追加</h2>
+        <h1>追加</h1>
         <table class="table" border="1" cellpadding="10"cellspacing="0">
         <tr><td class="td1">カテゴリ名前</td><td class="td2">
         <input type="text" size="30" class="text_box" name="category_name" required>

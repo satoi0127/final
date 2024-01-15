@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<br>
 <?php
     const SERVER = 'mysql220.phy.lolipop.lan';
     const DBNAME = 'LAA1517439-final';
@@ -19,7 +20,7 @@
     $sql->execute([$_POST['id']]);
     
     echo'<div class="main">';
-    echo'<h2>更新が完了しました</h2>';
+    echo'<h1>更新が完了しました</h1>';
     echo'<table border="1" cellpadding="10"cellspacing="0">';
     foreach($sql as $row){
         echo'<tr>';
