@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <br>
     <div class="main">
     <h1>カメラ</h1>
     <br>
-    <div class="menu">
+    <div class="menu"><br><br><br>
     <button onclick="location.href='all.php'">一覧</button>
     <button onclick="location.href='insert.php'">登録</button>
     <button onclick="location.href='update.php'">更新</button>

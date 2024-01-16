@@ -3,4 +3,4 @@
 ### クラス     :SD2B 
 ### 氏名       :立川慧 
 ### システム名 :カメラ管理システム 
-### URL        :
+### URL        :https://aso2301334.moo.jp/final/src/index.php
