@@ -20,8 +20,8 @@
     $sql->execute([$_POST['id']]);
     
     echo'<div class="main">';
-    echo'<h1>更新が完了しました</h1>';
-    echo'<table border="1" cellpadding="10"cellspacing="0">';
+    echo'<h1>更新が完了しました</h1><br>';
+    echo'<table border="1" cellpadding="10"cellspacing="0" class="tabale2">';
     foreach($sql as $row){
         echo'<tr>';
         echo'<td>',$row['id'],'</td>';

@@ -17,7 +17,7 @@
     $sql=$pdo->prepare('select * from Camera where id=?');
     $sql->execute([$_POST['id']]);
     echo'<div class="main">';
-    echo'<h1>更新</h1>';
+    echo'<h1>更新</h1><br>';
     foreach($sql as $row){
         $mid = $row['maker_id'];
         $cid = $row['category_id'];
