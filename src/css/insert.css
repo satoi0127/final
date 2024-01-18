@@ -1,6 +1,6 @@
 body{
     background-image: url(../img/back.jpg);
-    background-size: 1500px 800px;
+    background-size: cover;
 }
 button{
     margin-top: 15px;
